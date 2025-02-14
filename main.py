@@ -27,6 +27,7 @@ cfg["group_sizes"] = [2304//4, 2304 // 4 ,2304 // 2, 2304, 2304*2, 2304*4, 2304*
 cfg["num_tokens"] = 5e8
 cfg["model_batch_size"] = 32
 cfg["model_dtype"] = torch.bfloat16
+cfg = post_init_cfg(cfg)
 
 
 # Train the BatchTopK SAEs
